@@ -15,5 +15,5 @@
 - Tabbing within the dialog does not allow focus to reach background elements
 - When the dialog is closed, keyboard focus returns to the element that opened the dialog
 - Screen reader focus is trapped within the dialog
-- [The dialog has the correct role](html/dialog/dialog-role.md)
+- [The dialog has the correct role](dialog-role.md)
 - The dialog has an accessible name

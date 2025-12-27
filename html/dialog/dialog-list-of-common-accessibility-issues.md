@@ -4,4 +4,5 @@
 - Keyboard focus is not trapped inside the modal dialog
 - Dialog container is keyboard focusable
 - Incorrect element is focused when a dialog is opened
-- Dialog role or name is not read (announced) by screen readers
+- Dialog role or name is not read (announced) by screen readers / name is incorrect
+- The entire dialog's content is read

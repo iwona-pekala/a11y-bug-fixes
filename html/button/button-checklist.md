@@ -1,5 +1,8 @@
 # Button
 
+## What is a button?
+Button is a control, which is presnted to assistive technologies with button role.
+
 ## Enabled button checklist
 
 - Button can be reached with tab key

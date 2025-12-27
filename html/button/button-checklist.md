@@ -7,3 +7,4 @@
 - Button can be activated with Enter ***and*** Space keys
 - Button has correct role
 - Button has a name
+- Button's label is included in its name

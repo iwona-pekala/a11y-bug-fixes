@@ -24,7 +24,7 @@ Do **NOT** not apply the role twice:
 
 - It's expected to hear 'dialog', when a dialog appears on the screen.
 
-### Cases when 'dialog' cannot be heard
+### Cases when 'dialog' may not be heard
 - The dialog has no name
 - Focus is not moved into dialog when it's opened
 - TalkBack screen reader has a bug which prevents dialog announcement

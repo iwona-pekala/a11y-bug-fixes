@@ -12,6 +12,7 @@
 - Non-interactive elements inside the dialog cannot be reached using the Tab key
   - The dialog container itself cannot be reached using the Tab key
 - Tabbing within the dialog does not allow focus to reach background elements
+- When the dialog is closed, keyboard focus returns to the element that opened the dialog
 - Screen reader focus is trapped within the dialog
 - The dialog has the correct role
 - The dialog has an accessible name

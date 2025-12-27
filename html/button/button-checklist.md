@@ -1,7 +1,7 @@
 # Button
 
 ## What is a button?
-Button is a control, which is presented to assistive technologies with button role.
+Button is a control, which is presented to assistive technologies with the button role.
 
 ## Enabled button checklist
 

@@ -3,6 +3,7 @@
 ## Checklist
 
 - Dialog entry point is a button
+  - [Optional] Dialog entry point indicates that it open a dialog
 - When the dialog entry point is activated, keyboard focus moves into the dialog
   - The first interactive element in the dialog receives focus
   -The focus indicator is visible

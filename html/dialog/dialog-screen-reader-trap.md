@@ -36,3 +36,20 @@ A walkaround involves seprating 'background' and the dialog's content and [hidin
   </div>
 </body>
 ```
+## 2. Case `<dialog>` element
+The modal <dialog> is displayed by using `showModal()` method. There are no extra steps required, screen reader focus is trapped inside such a dialog.
+
+**Example:**
+
+```
+<button>Open dialog</button>
+<dialog aria-label="…">
+  …
+</dialog>
+```
+
+```
+showButton.addEventListener("click", () => {
+  dialog.showModal();
+});
+```

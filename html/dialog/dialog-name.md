@@ -41,4 +41,7 @@ Assuming that the element has dialog role, it's expected to hear name alongside 
 - Focus is not moved into dialog when it's opened
 - **TalkBack** screen reader has a bug which prevents dialog announcement
 - Dialog is nested inside an element which doesn't allow dialog children
-- Name was applied with a delay 
+- Name was applied with a delay
+- There is typo in aria-label or aria-labelledby attribute
+- Id(s) referenced inside aria-labelledby do not exist
+- Dialog element is in DOM and element referenced inside aria-labelledby is part of shadow DOM (or vice versa). 

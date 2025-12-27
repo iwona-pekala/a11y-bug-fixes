@@ -29,3 +29,5 @@ Do **NOT** not apply the role twice:
 - Focus is not moved into dialog when it's opened
 - TalkBack screen reader has a bug which prevents dialog announcement
 - Dialog is nested inside an element which doesn't allow dialog children
+- Name was applied with a delay 
+

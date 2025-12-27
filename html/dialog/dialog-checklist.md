@@ -6,7 +6,7 @@
   - [Optional] [Control that opens a dialog indicates that it opens a dialog](dialog-entry-point.md)
 - When the dialog entry point is activated, keyboard focus moves into the dialog
   - The first interactive element in the dialog receives focus
-  -The focus indicator is visible
+  - The focus indicator is visible
 - Interactive components within the dialog can be operated using a keyboard
   - Each focused element has a visible focus indicator
   - Each focus indicator has sufficient color contrast

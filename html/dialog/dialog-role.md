@@ -27,7 +27,7 @@ Do **NOT** not apply the role twice:
 ### Cases when 'dialog' may not be heard
 - The dialog has no name
 - Focus is not moved into dialog when it's opened
-- TalkBack screen reader has a bug which prevents dialog announcement
+- **TalkBack** screen reader has a bug which prevents dialog announcement
 - Dialog is nested inside an element which doesn't allow dialog children
 - Name was applied with a delay 
 

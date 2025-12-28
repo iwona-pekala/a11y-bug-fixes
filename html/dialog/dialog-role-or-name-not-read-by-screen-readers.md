@@ -6,9 +6,8 @@ Follow the path below if role or name are not read by a screen reader or an inco
    - If **No** - go the Role section
    - If **Yes** - go the next list item
 2. Is it Android TalkBack or iOS VoiceOver?
-   - If **Yes**
-        - This is TalkBack issue only - If you are sure that no other screen readers are affected, then STOP. This is a bug in TalkBack, there is no workaround.
-        - This is iOS VoiceOver, there is a role, there is no name, but the role should be read. Add a name, VoiceOver doesn't read dialog role, when a name is missing. Retest. Go to the Role section if the issue persists.
+   - If **Yes**, this is TalkBack issue only - If you are sure that no other screen readers are affected, then STOP. This is a bug in TalkBack, there is no workaround.
+   - If **Yes**, this is iOS VoiceOver, there is a role, there is no name, but the role should be read. Add a name, VoiceOver doesn't read dialog role, when a name is missing. Retest. Go to the Role section if the issue persists.
    - If **No** - Go to the Role section.
 
 ## Role

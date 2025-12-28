@@ -8,8 +8,8 @@ Follow the path below if role or name are not read by a screen reader or an inco
 2. Is it Android TalkBack or iOS VoiceOver?
    - If **Yes**
         - This is TalkBack issue only - If you are sure that no other screen readers are affected, then STOP. This is a bug in TalkBack, there is no workaround.
-        - This is iOS VoiceOver, there is a role, no name, but at least role should be read. Add a name, VoiceOver doesn't read dialog role, when a name is missing.
-     If **No** - Go to the Role section.
+        - This is iOS VoiceOver, there is a role, there is no name, but the role should be read. Add a name, VoiceOver doesn't read dialog role, when a name is missing. Retest. Start over if the issue persists.
+   - If **No** - Go to the Role section.
 
 ## Role
 1. Find HTML for the dialog's container.
@@ -30,7 +30,7 @@ Follow the path below if role or name are not read by a screen reader or an inco
 
 ### aria-label
 1. Is aria-label value non-empty string matching the expected name
-   - If **Yes** - TODO
+   - If **Yes** - Go to Tricky cases section
    - If **No** - Update the value so it matches expected name
  ### aria-labelledby
 1. Is aria-labelledby value non-empty string matching the expected name
@@ -38,9 +38,11 @@ Follow the path below if role or name are not read by a screen reader or an inco
    - If **No** - Go to the next list item
 2. Does aria-labelledby reference an existing id?
    - If **Yes** - Go to the next list item
-   - If **No** - No. Add/update id of the element which contains dialog's name OR use aria-label instead.
-3. Is there only one element with the referenced id
+   - If **No** - No. Add/update id of the element which contains dialog's name **OR** use aria-label instead.
+3. Is there only one element with the referenced id?
    - If **Yes** - Go to the next list item
    - If **No** - Update ids, make sure ids are unique
-4. 
+4. Is the dialog outside the shadow DOM while referenced id is inside the shadow DOM (or vice versa)
+   - If **Yes** - Make sure both the dialog and an element referenced in aria-labelledby are in the same DOM, or use aria-label instead. Retest. Start over if the issue persists.
+   - If **No** - Go to the Tricky cases version
 ## Tricky cases

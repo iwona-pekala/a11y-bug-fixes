@@ -3,7 +3,7 @@ Follow the path below if role or name are not read by a screen reader or an inco
 
 ## Assistive technology support
 1. Does the issue happen with some browsers/screen readers only?
-   - If **No** - Go the Role section
+   - If **No** -- Go the Role section
    - If **Yes** - Continue
 2. Is it Android TalkBack or iOS VoiceOver?
    - If **Yes**, this is TalkBack issue only - If you are sure that no other screen readers are affected, then this is a bug in TalkBack, there is no workaround. Stop.

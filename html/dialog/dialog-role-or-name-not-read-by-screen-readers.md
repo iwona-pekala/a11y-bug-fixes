@@ -1,5 +1,8 @@
 # Dialog role / name troubleshooting steps
 Follow the path below if role or name are not read by a screen reader or an incorrect name is read by the screen reader.
+
+## First steps
+1. Find HTML for the dialog's container.
 ## Assistive technology support
 1. Does the issue happen with some browsers/screen readers only?
    - If **No** – Go the [Role](#role) section
@@ -9,15 +12,14 @@ Follow the path below if role or name are not read by a screen reader or an inco
    - If **Yes**, this is iOS VoiceOver **AND** there is a role **AND** the role is not read **AND** There is no name – Add a name, VoiceOver doesn't read dialog role, when a name is missing. Retest. Go to the [Role](#role) section if the issue persists.
    - If **No** – Go to the [Role](#role) section.
 ## Role
-1. Find HTML for the dialog's container.
-2. Is the container the `<dialog>` tag?
+1. Is the container the `<dialog>` tag?
    - If **Yes** – Continue
    - If **No** – Apply dialog role **AND** go to the [Name](#name) section
-3. Does the <dialog> tag have `role` attribute?
+2. Does the <dialog> tag have `role` attribute?
    - If **Yes** - `role="dialog"` – If it wasn't added as a workaround for a browser/screen reader not supporting <dialog> - remove it. Go to the [Name](#name) section.
    - If **Yes** - `role` value is other than `dialog` – remove the role attribute entirely. Retest. Go to the [Name](#name) section if the issue persists.
    - If **No** – go the [Name](#name) section
-4. Does the non <dialog> container have a `role="dialog"` attribute?
+3. Does the non <dialog> container have a `role="dialog"` attribute?
    - If **Yes** – Go to the [Name](#name) section
    - If **No** – Apply dialog role **AND** Continue  
 ## Name

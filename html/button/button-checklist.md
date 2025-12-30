@@ -12,3 +12,6 @@
 - Button can be activated with Enter ***and*** Space keys
 - Button is not used to navigate between URLs
 - Button's label is included in its name
+
+## Before you start implementation
+While it's possible to create a custom button which meet all the criteria above, consider using <button> tag. It's a huge time saver.

@@ -1,7 +1,7 @@
 # Dialog role / name troubleshooting steps
 Follow the path below if role or name are not read by a screen reader or an incorrect name is read by the screen reader.
 
-## First steps
+## First step
 1. Find HTML for the dialog's container. 
 ## Assistive technology support
 1. Does the issue happen with some browsers/screen readers only?

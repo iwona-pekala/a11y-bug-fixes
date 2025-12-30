@@ -4,8 +4,8 @@ Screen reader is trapped inside the dialog, when all dialog's elements are acces
 
 Jump to your implementation: 
 
-- [`role="dialog"`](#1-case-roledialog)
-- [`<dialog>`](#2-case-dialog-element)
+1. [`role="dialog"`](#1-case-roledialog)
+2. [`<dialog>`](#2-case-dialog-element)
 
 ## 1. Case `role="dialog"`
 

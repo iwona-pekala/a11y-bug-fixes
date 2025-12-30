@@ -2,6 +2,11 @@
 
 Screen reader is trapped inside the dialog, when all dialog's elements are accessibile for a screen reader, while any background page elements cannot be reached with a screen reader.
 
+Jump to your implementation: 
+
+- [`role="dialog"`](#1-case-roledialog)
+- [`<dialog>`](#2-case-dialog-element)
+
 ## 1. Case `role="dialog"`
 
 If a dialog is implemented by using role=`dialog` attribute, screen reader focus can be trapped inside a dialog by using `aria-modal` property.

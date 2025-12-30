@@ -2,7 +2,7 @@
 
 ## Checklist
 
-- <input type="checkbox">Control that opens a dialog is a [button](../button/button-checklist.md)
+- Control that opens a dialog is a [button](../button/button-checklist.md)
   - [Optional] [Control that opens a dialog indicates that it opens a dialog](dialog-entry-point.md)
 - When the dialog entry point is activated, keyboard focus moves into the dialog
   - The first interactive element in the dialog receives focus

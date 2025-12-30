@@ -13,6 +13,7 @@
 - Button is not used to navigate between URLs
 - Button's label describe its purpose
 - Button's label is included in its name
+- Button which looks the same and performs the same action should have a consistent name
 - Button shouldn't contain any redundant attributes
 
 ## Before you start implementation

@@ -3,10 +3,10 @@
 Screen reader is trapped inside the dialog, when all dialog's elements are accessibile for a screen reader, while any background page elements cannot be reached with a screen reader.
 
 What is you current dialog implementation?
-1. [`role="dialog"`](#1-case-roledialog)
-2. [`<dialog>`](#2-case-dialog-element)
+1. [`role="dialog"`](#case-roledialog)
+2. [`<dialog>`](#case-dialog-element)
 
-## 1. Case `role="dialog"`
+## Case `role="dialog"`
 
 If a dialog is implemented by using role=`dialog` attribute, screen reader focus can be trapped inside a dialog by using `aria-modal` property.
 
@@ -39,7 +39,7 @@ A walkaround involves seprating 'background' and the dialog's content and [hidin
   </div>
 </body>
 ```
-## 2. Case `<dialog>` element
+## Case `<dialog>` element
 The modal <dialog> is displayed by using `showModal()` method. There are no extra steps required, screen reader focus is trapped inside such a dialog.
 
 **Example:**

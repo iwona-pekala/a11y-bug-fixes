@@ -14,7 +14,7 @@
 - Button has visible focus indicator
 - Button can be activated with Enter ***and*** Space keys
 - Button is not used to navigate between URLs
-- Button shouldn't contain any redundant attributes
+- [Button shouldn't contain any redundant attributes](button-redundant-attributes.md)
 
 ## Before you start implementation
 While it's possible to create a [custom button](native-button-vs-custom-button.md) which meet all the criteria above, consider using the `<button>` tag. It's a huge time saver.

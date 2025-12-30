@@ -11,6 +11,7 @@
 - Button has visible focus indicator
 - Button can be activated with Enter ***and*** Space keys
 - Button is not used to navigate between URLs
+- Button's label describe its purpose
 - Button's label is included in its name
 
 ## Before you start implementation

@@ -1,6 +1,4 @@
-# How to break button's accessibility
-
-Almost everything that can go wrong with button's accessibility.
+# What can go wrong with button's accessibility
 
 ## Role
 

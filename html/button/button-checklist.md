@@ -5,7 +5,7 @@
 2. A user can interact with a button in a predicatable way (interaction is the same as for all other buttons)
 
 ## Enabled button checklist
-- Button has the correct [role](button-role.md)
+- [Button has the correct role](button-role.md)
 - Button has a name
 - Button can be reached with the Tab key
 - Button has visible focus indicator

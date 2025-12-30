@@ -16,4 +16,4 @@
 - Button shouldn't contain any redundant attributes
 
 ## Before you start implementation
-While it's possible to create a custom button which meet all the criteria above, consider using the `<button>` tag. It's a huge time saver.
+While it's possible to create a [custom button](native-button-vs-custom-button.md) which meet all the criteria above, consider using the `<button>` tag. It's a huge time saver.

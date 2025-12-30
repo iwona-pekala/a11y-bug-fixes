@@ -7,13 +7,13 @@
 ## Enabled button checklist
 - [Button has the correct role](button-role.md)
 - Button has a name
+- Button's label describe its purpose
+- Button's label is included in its name
+- Button which looks the same and performs the same action should have a consistent name
 - Button can be reached with the Tab key
 - Button has visible focus indicator
 - Button can be activated with Enter ***and*** Space keys
 - Button is not used to navigate between URLs
-- Button's label describe its purpose
-- Button's label is included in its name
-- Button which looks the same and performs the same action should have a consistent name
 - Button shouldn't contain any redundant attributes
 
 ## Before you start implementation

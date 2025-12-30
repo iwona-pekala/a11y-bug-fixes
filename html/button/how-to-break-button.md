@@ -30,7 +30,9 @@ Any `<button>` can be reached with a Tab key. Still it can be broken by using `t
 Browsers provide the default focus indicator for each focusable element, including the `<button>`. Do not add CSS that makes focus indicator not visible when a button is focused. Add own focus indicator if the default one is removed.
 
 ## Enter and Space
-Any `<button>` with onclick event, can be activated with Enter and Space as well. Custom keyboard events for Enter/Space shouldn't be added.
+Any `<button>` with onclick event, can be activated with Enter and Space as well. Custom keyboard events for Enter/Space shouldn't be added. The outcome might be following:
+- The button's action might be performed twice.
+- The button might be impossible to activate with screen readers on.
 
 **✖ Do NOT do this**
 ```

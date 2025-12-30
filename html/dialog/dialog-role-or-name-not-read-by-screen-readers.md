@@ -16,7 +16,7 @@ Follow the path below if role or name are not read by a screen reader or an inco
 3. Does the <dialog> tag have `role` attribute?
    - If **Yes** - `role="dialog"` – If it wasn't added as a workaround for a browser/screen reader not supporting <dialog> - remove it. Go to the [Name](#name) section.
    - If **Yes** - `role` value is other than `dialog` – remove the role attribute entirely. Retest. Go to the [Name](#name) section if the issue persists.
-   - If **No** – go the the [Name](#name) section
+   - If **No** – go the [Name](#name) section
 4. Does the non <dialog> container have a `role="dialog"` attribute?
    - If **Yes** – Go to the [Name](#name) section
    - If **No** – Apply dialog role **AND** Continue  

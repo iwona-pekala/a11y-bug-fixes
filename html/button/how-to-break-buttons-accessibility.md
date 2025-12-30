@@ -42,7 +42,7 @@ i = 0;
 #### Exceptions
 While applying a new role will strip the original role, there might be cases when it's intended. Some tab panel implementations may include elements like: `<button role="tab">`, but if you are about to change button's role, make sure it's *really* intended.
 
-### <a role="button">
+### `<a role="button">`
 TODO
 
 ## Name

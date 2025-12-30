@@ -14,7 +14,7 @@
   - The dialog container itself cannot be reached using the Tab key
 - Tabbing within the dialog does not allow focus to reach background elements
 - [Dialog has a title](dialog-has-title.md)
-- When the dialog is closed, keyboard focus returns to the element that opened the dialog
+- [When the dialog is closed, keyboard focus returns to the element that opened the dialog](dialog-focus-return.md)
 - [Screen reader focus is trapped within the dialog](dialog-screen-reader-trap.md)
 - [The dialog has the correct role](dialog-role.md)
 - [The dialog has an accessible name](dialog-name.md)

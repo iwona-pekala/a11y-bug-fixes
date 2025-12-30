@@ -14,10 +14,9 @@ If a dialog is implemented by using role=`dialog` attribute, screen reader focus
 
 ```<div role="dialog" aria-label="Upload files" aria-modal="true">…</div>```
 
-### Screen readers
 The one attribute above is sufficient for all screen readers except for TalkBack. TalkBack ignores aria-modal attribute. 
 
-#### TalkBack resolution
+### TalkBack resolution
 There are two possible approaches: ignore TalkBack and wait for a full support, or provide a walkaround.
 A walkaround involves seprating 'background' and the dialog's content and [hiding](../hiding/what-should-be-hidden.md) not relevant layer from screen readers.
 

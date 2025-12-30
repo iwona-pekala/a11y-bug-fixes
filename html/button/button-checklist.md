@@ -13,6 +13,7 @@
 - Button is not used to navigate between URLs
 - Button's label describe its purpose
 - Button's label is included in its name
+- Button shouldn't contain any redundant attributes
 
 ## Before you start implementation
 While it's possible to create a custom button which meet all the criteria above, consider using the `<button>` tag. It's a huge time saver.

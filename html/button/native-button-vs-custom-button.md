@@ -37,7 +37,7 @@ The <button> has implicit role, now we need to add a role explicitly. The span i
 <span role="button">Save</span>
 ```
 #### Name
-Name luckily will stay as "Save". No extra steps are needed.
+The name will stay as "Save". No extra steps are needed.
 
 #### Button can be reached with the Tab key
 The `<button>` is focusable with the Tab key by default, but for `<span>` the `tabindex` attribute is needed:

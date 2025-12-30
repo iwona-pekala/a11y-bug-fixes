@@ -2,8 +2,7 @@
 
 Screen reader is trapped inside the dialog, when all dialog's elements are accessibile for a screen reader, while any background page elements cannot be reached with a screen reader.
 
-Jump to your implementation: 
-
+What is you current dialog implementation?
 1. [`role="dialog"`](#1-case-roledialog)
 2. [`<dialog>`](#2-case-dialog-element)
 

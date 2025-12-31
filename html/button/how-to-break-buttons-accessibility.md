@@ -2,7 +2,7 @@
 
 ## Role
 
-### Random non-`<button>` tag pretending to be a button
+### Random tag pretending to be a button
 **✖ Broken example:**
 ```
 <span onclick="action()">I'm pretending to be a button</span>
@@ -12,6 +12,7 @@
 Preferred:
 ```
 <button>I'm a button</button>
+<input type="button" value="I'm also a button</button>
 ```
 
 Last resort with several extra conditions:

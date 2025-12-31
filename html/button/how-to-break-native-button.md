@@ -46,3 +46,17 @@ Any `<button>` with onclick event, can be activated with Enter and Space as well
 ```
 <button onclick="save()">Save</button>
 ```
+
+## The button cannot be activated with keyboard
+As mentioned before providing onclick() is sufficient to ensure keyboard accessibility as well. However, `click` event must be set on the button, not no inner or outer element.
+Such a button will work with mouse without any issues, but cannot be activated with keyboard.
+
+**✖ Do NOT do this**
+```
+<button><span onclick="save()">Save</span></button>
+```
+
+**✔ DO instead**
+```
+<button onclick="save()"><span>Save</span></button>
+```

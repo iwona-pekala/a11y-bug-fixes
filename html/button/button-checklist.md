@@ -8,7 +8,7 @@
 - [Button has the correct role](button-role.md)
 - [Button has a name](button-name.md)
 - [Button's label and name describe its purpose](button-label-name-purpose.md)
-- Button's label is included in its name
+- [Button's label is included in its name](button-label-in-name.md)
 - Button's name doesn't include role
 - Button's name doesn't include operating instructions
 - Button's description doesn't include standard keyboard operating instructions

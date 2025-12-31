@@ -3,16 +3,18 @@ Some attributes added to the button won't impact accessibility, but they will bl
 
 ## Role
 
-If you use the `<button>` tag, do not add explicit role. The role is implicit in this case. In other words, the `<button>` has a role button by default.
+If you use the `<button>` tag or `<input type="button">`, do not add explicit role. The role is implicit in this case. In other words, the `<button>` has a role button by default.
 
 **✖ BAD practice:**
 ```
 <button role="button">Save</button>
+<input type="button" value="Save" role="button">
 ```
 
 **✔ Good practice:**
 ```
 <button>Save</button>
+<input type="button" value="Save">
 ```
 
 ## Name

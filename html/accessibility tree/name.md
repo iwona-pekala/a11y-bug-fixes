@@ -1,6 +1,6 @@
-# Name (accessibility)
+# Name (Accessibility name)
 
-The accessible name is the name of a user interface element. Name is used by assistive technologies, like screen readers.
+The accessibility name is the name of a user interface element. Name is used by assistive technologies, like screen readers.
 
 ## Name computation rules
 

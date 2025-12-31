@@ -6,9 +6,12 @@
 
 ## Enabled button checklist
 - [Button has the correct role](button-role.md)
-- Button has a name
+- [Button has a name](button-name.md)
 - Button's label describe its purpose
 - Button's label is included in its name
+- Button's name doesn't include role
+- Button's name doesn't include operating instructions
+- Button's description doesn't include standard keyboard operating instructions
 - Button which looks the same and performs the same action should have a consistent name
 - Button can be reached with the Tab key
 - Button has visible focus indicator

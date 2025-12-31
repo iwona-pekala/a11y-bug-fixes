@@ -62,6 +62,7 @@ TODO
 ### Tab key (or any other key) activate the button
 ### onclick set for an incorrect tag
 ### Works with keyboard only, but doesn't work with a screen reader
+### tabindex / key events mismatch
 ### Page scrolls when space is pressed
 
 ## No focus indicator

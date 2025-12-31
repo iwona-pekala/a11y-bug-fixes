@@ -20,3 +20,8 @@
 
 ## Before you start implementation
 While it's possible to create a [custom button](native-button-vs-custom-button.md) which meet all the criteria above, consider using the `<button>` tag. It's a huge time saver.
+
+## Complementary reading
+- [How to break a native <button>'s accessbility?](how-to-break-native-button.md)
+- [All ways to break button's accessibility](how-to-break-buttons-accessibility.md)
+

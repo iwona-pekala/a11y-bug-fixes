@@ -7,7 +7,7 @@
 ## Enabled button checklist
 - [Button has the correct role](button-role.md)
 - [Button has a name](button-name.md)
-- Button's label describe its purpose
+- Button's label and name describe its purpose
 - Button's label is included in its name
 - Button's name doesn't include role
 - Button's name doesn't include operating instructions

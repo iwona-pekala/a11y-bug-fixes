@@ -71,4 +71,4 @@ TODO
 
 ## No focus indicator
 
-## Button used to navigate between URLs
+## Button is used to navigate between URLs

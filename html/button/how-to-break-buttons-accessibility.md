@@ -12,7 +12,7 @@
 Preferred:
 ```
 <button>I'm a button</button>
-<input type="button" value="I'm also a button</button>
+<input type="button" value="I'm also a button"</button>
 ```
 
 Last resort with several extra conditions:

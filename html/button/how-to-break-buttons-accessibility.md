@@ -51,6 +51,10 @@ TODO
 ### Name that doesn't describe the purpose
 ### Inconsistent name
 ### Label not included in name
+### Role and Name are not set on the same tag
+### Role is included in Name
+### Activation instructions are included in Name
+### Default activation instructions are provided in the description
 
 ## Button is not keyboard focusable
 

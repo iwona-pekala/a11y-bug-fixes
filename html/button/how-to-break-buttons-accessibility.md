@@ -12,7 +12,7 @@
 Preferred:
 ```
 <button>I'm a button</button>
-<input type="button" value="I'm also a button"</button>
+<input type="button" value="I'm also a button">
 ```
 
 Last resort with several extra conditions:
@@ -27,17 +27,20 @@ Almost any role added to the `<button>` tag will strip the button's role. The on
 ```
 <button role="none">Confirm</button>
 
+
 <!--
-The tag below is an eqivalent of writing the sam code twice, like this:
+The tags below are eqivalents of writing the sam code twice, like this:
 i = 0;
 i = 0;
 -->
 <button role="button">Confirm</button>
+<input type="button" value="Confirm" role="button">
 ```
 
 **✔ DO instead:**
 ```
 <button>Confirm</button>
+<input type="button" value="Confirm">
 ```
 
 #### Exceptions

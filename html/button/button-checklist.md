@@ -11,7 +11,6 @@
 - [Button's label is included in its name](button-label-in-name.md)
 - [Button's name doesn't include role](buttons-name-does-not-include-role.md)
 - Button's name doesn't include operating instructions
-- Button's description doesn't include standard keyboard operating instructions
 - Button which looks the same and performs the same action should have a consistent name
 - Button can be reached with the Tab key
 - Button has visible focus indicator

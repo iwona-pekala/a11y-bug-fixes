@@ -42,7 +42,8 @@ The aria-label attribute should contain the text that should act as a label. Whe
 ```
 
 **✖ Antipatterns**
-Do not add aria-label which duplicates content
+
+Do not add aria-label which duplicates content.
 ```
 <button aria-label="Save"><img src="" alt="Save"></button>
 <span role="button" tabindex="0" aria-label="Save">Save</span>

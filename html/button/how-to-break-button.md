@@ -35,7 +35,7 @@ Browsers provide the default focus indicator for each focusable element, includi
 Any `<button>` with onclick event, can be activated with Enter and Space as well. Custom keyboard events for Enter/Space shouldn't be added. The outcome might be following:
 - The button's action might be performed twice.
 - The button might be impossible to activate with screen readers on.
-- The button's action might be performed for any key (Example: The Tab key may activate the button)
+- The button's action might be performed for any key. Example: The Tab key may activate the button
 
 **✖ Do NOT do this**
 ```

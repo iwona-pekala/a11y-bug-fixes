@@ -59,6 +59,7 @@ TODO
 ### Space doesn't activate the button
 ### Enter doesn't activate the button
 ### Keyup or Keydown
+### Tab key (or any other key) activate the button
 ### onclick set for an incorrect tag
 ### Works with keyboard only, but doesn't work with a screen reader
 ### Page scrolls when space is pressed

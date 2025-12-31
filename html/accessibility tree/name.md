@@ -27,7 +27,7 @@ Name computation rules are very complext and they are described in [Accessible N
 Name calculation precedence order may vary depending on role. The roughly valid order is:
 
 `aria-labelledby` &gt; `aria-label` &gt; `<label>` (if applicable) &gt; contents (if applicable)
-Prcedence of the `title` attribute depends on context.
+Precedence of the `title` attribute depends on context.
 
 This section does not attempt to cover all possible scenarios.
 

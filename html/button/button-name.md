@@ -29,6 +29,7 @@ While the remaining naming options include: `aria-labelledby`, `aria-label`, `<l
 
 ### aria-label
 The aria-label attribute should contain the text that should act as a label. When picking aria-label content, imagine that this is a text that would be displayed on the button.
+
 **Examples:**
 ```
 <!-- Buttons with background image and no content -->

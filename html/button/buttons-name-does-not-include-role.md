@@ -1,7 +1,7 @@
 # Button's name doesn't include role
 
-Name and role are seperate elements. Duplicating role in a name is bad practice. This results in double annnouncement from screen readers.
-Button announcement comes from iplicit (`<button>`) or explicit (`role="button"`) role.
+Name and role are separate elements. Duplicating role in a name is bad practice. This results in double announcement from screen readers.
+Button announcement comes from implicit (`<button>`) or explicit (`role="button"`) role.
 
 ## Bad examples
 

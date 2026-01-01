@@ -68,9 +68,9 @@ TODO
 ### Enter doesn't activate the button
 ### Keyup or Keydown
 ### Tab key (or any other key) activates the button
-### onclick set for an incorrect tag
+### `onclick` set for an incorrect tag
 ### Works with keyboard only, but doesn't work with a screen reader
-### tabindex / key events mismatch
+### `tabindex` / key events mismatch
 ### Page scrolls when Space is pressed
 
 ## No focus indicator

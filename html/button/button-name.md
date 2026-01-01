@@ -27,8 +27,8 @@ In all cases above, the content provides a name, and in each case the name is "*
 
 While the remaining naming options include: `aria-labelledby`, `aria-label`, `<label>`, and `title`, the most common use case for buttons is `aria-label`.
 
-### aria-label
-The aria-label attribute should contain the text that should act as a label. When picking aria-label content, imagine that this is a text that would be displayed on the button.
+### `aria-label`
+The `aria-label` attribute should contain the text that should act as a label. When picking `aria-label` content, imagine that this is a text that would be displayed on the button.
 
 **Examples:**
 ```
@@ -43,7 +43,7 @@ The aria-label attribute should contain the text that should act as a label. Whe
 
 **✖ Antipatterns**
 
-Do not add aria-label that duplicates content.
+Do not add `aria-label` that duplicates content.
 ```
 <button aria-label="Save"><img src="" alt="Save"></button>
 <span role="button" tabindex="0" aria-label="Save">Save</span>

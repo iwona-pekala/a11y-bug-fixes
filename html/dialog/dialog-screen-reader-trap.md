@@ -8,13 +8,13 @@ What is your current dialog implementation?
 
 ## Case `role="dialog"`
 
-If a dialog is implemented by using the role=`dialog` attribute, screen reader focus can be trapped inside a dialog by using the `aria-modal` property.
+If a dialog is implemented by using the `role="dialog"` attribute, screen reader focus can be trapped inside a dialog by using the `aria-modal` property.
 
 **Example:**
 
 ```<div role="dialog" aria-label="Upload files" aria-modal="true">…</div>```
 
-The one attribute above is sufficient for all screen readers except for TalkBack. TalkBack ignores the aria-modal attribute. 
+The one attribute above is sufficient for all screen readers except for TalkBack. TalkBack ignores the `aria-modal` attribute. 
 
 ### TalkBack resolution
 There are two possible approaches: ignore TalkBack and wait for full support, or provide a workaround.

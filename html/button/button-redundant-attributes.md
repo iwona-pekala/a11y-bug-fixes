@@ -34,7 +34,7 @@ Do not use `aria-label`/`aria-labelledby`/`title` if the button's name should ma
 <span tabindex="0" role="button">Save</span>
 ```
 
-## Tabindex
+## `tabindex`
 Do not add `tabindex="0"` to the native `<button>`. The `<button>` is keyboard focusable by default.
 
 **✖ BAD practice:**
@@ -48,4 +48,4 @@ Do not add `tabindex="0"` to the native `<button>`. The `<button>` is keyboard f
 ```
 
 ## Key events
-Do not add onkeydown/onkeyup to the native `<button>`. They are handled automatically for Enter/Space - onclick executes.
+Do not add `onkeydown`/`onkeyup` to the native `<button>`. They are handled automatically for Enter/Space - `onclick` executes.

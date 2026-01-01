@@ -17,5 +17,5 @@ Having a dialog title is good practice. A title is usually visible text at the t
 - Visible dialog's title is often linked with the dialog via `aria-labelledby`.
 - If `aria-labelledby` points to the dialog's title, make sure that the title is not empty.
 - Dialog title can be invisible, but accessible to screen reader users (off-screen heading).
-- If the dialog title is present, it might be beneficial to use aria-labelledby over aria-label.
-- If there is no text in DOM that can be considered a dialog's title, use aria-label to provide a name for the dialog.
+- If the dialog title is present, it might be beneficial to use `aria-labelledby` over `aria-label`.
+- If there is no text in DOM that can be considered a dialog's title, use `aria-label` to provide a name for the dialog.

@@ -20,7 +20,7 @@ Last resort with several extra conditions:
 <span onclick="action()" role="button" …>I'm pretending to be a button</span>
 ```
 
-### A <button> tag with role attribute
+### A `<button>` tag with role attribute
 Almost any role added to the `<button>` tag will strip the button's role. The only exception is `role="button"`, but there is no point of indicating that button is a button.
 
 **✖ Broken example:**

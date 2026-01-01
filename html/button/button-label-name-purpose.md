@@ -21,7 +21,7 @@ The fix may include providing some extra information in the name:
 <button aria-label="This is me. Confirm my avatar's look">This is me</button>
 ```
 
-In the fixed version, the name is provided via the aria-label attribute. The name contains visible text *AND* provides extra information.
+In the fixed version, the name is provided via the `aria-label` attribute. The name contains visible text *AND* provides extra information.
 Visible text (label) must be included in the name.
 
 ## Resolving subjectivity

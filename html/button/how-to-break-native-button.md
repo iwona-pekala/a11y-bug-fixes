@@ -32,7 +32,7 @@ Browsers provide the default focus indicator for each focusable element, includi
 - Add own focus indicator if the default one is removed.
 
 ## Enter and Space
-Any `<button>` with an onclick event can be activated with Enter and Space as well. Custom keyboard events for Enter/Space shouldn't be added. The outcome might be the following:
+Any `<button>` with an `onclick` event can be activated with Enter and Space as well. Custom keyboard events for Enter/Space shouldn't be added. The outcome might be the following:
 - The button's action might be performed twice.
 - The button might be impossible to activate with screen readers on.
 - The button's action might be performed for any key. Example: The Tab key may activate the button.
@@ -48,7 +48,7 @@ Any `<button>` with an onclick event can be activated with Enter and Space as we
 ```
 
 ## `click` event set for the correct element
-As mentioned before, providing onclick() is sufficient to ensure keyboard accessibility as well. However, the `click` event must be set on the button, not on an inner or outer element.
+As mentioned before, providing `onclick()` is sufficient to ensure keyboard accessibility as well. However, the `click` event must be set on the button, not on an inner or outer element.
 Such a button will work with a mouse without any issues, but cannot be activated with a keyboard.
 
 **✖ Do NOT do this**

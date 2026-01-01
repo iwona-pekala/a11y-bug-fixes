@@ -45,10 +45,10 @@ The `<button>` is focusable with the Tab key by default, but for `<span>` the `t
 <span role="button" tabindex="0">Save</span>
 ```
 #### Button has visible focus indicator
-This part was resolved by adding the tabindex attribute.
+This part was resolved by adding the `tabindex` attribute.
 
 #### Button can be activated with Enter ***and*** Space keys
-There were no extra steps for the `<button>`. The onclick event also handles Space and Enter keys (onclick is called for Enter keydown and Space keyup).
+There were no extra steps for the `<button>`. The `onclick` event also handles Space and Enter keys (`onclick` is called for Enter keydown and Space keyup).
 
 Custom button requires, in addition to `onclick`:
 - `onkeydown` for Enter (should perform the same action as `onclick`)

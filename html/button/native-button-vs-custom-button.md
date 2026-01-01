@@ -25,14 +25,14 @@ As we can see almost evey checklist element is met by default without any extra 
 
 Custom buttons are often created from an element without any semantics like: `<div>` or `<span>`, or from `<a>` tag.
 
-### <span>
+### `<span>`
 Let's assume custom that we want meet the button checklist with the custom button created with `<span>`. Starting point is:
 ```
 <span>Save</span>
 ```
 
 #### Role
-The <button> has implicit role, now we need to add a role explicitly. The span is turned into:
+The `<button>` has implicit role, now we need to add a role explicitly. The span is turned into:
 ```
 <span role="button">Save</span>
 ```

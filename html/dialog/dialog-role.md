@@ -9,7 +9,7 @@
 `<div role="dialog" aria-label="Upload attachments">…</div>`
 
 ***OR***
-  - It has implicit role derived from the <dialog> tag
+  - It has implicit role derived from the `<dialog>` tag
 
 ***Example:***
 
@@ -30,4 +30,3 @@ Do **NOT** not apply the role twice:
 - **TalkBack** screen reader has a bug which prevents dialog announcement
 - Dialog is nested inside an element which doesn't allow dialog children
 - Name was applied with a delay 
-

@@ -58,7 +58,7 @@ For elements for which labelling `<label>` tag is supported, and there are no at
 Still it's possible to override visible text
 ```
 <!-- Now the input's name is: "Current year"
-aria-label and aria-labelledby have precedence over <label>
+aria-label and aria-labelledby have precedence over `<label>`
 -->
 <label for="year">Year</label>
 <input aria-label="Current year" type="text" id="year"> 

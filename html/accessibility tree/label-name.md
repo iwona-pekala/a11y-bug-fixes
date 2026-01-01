@@ -1,7 +1,7 @@
 # The difference between label and name
 
 ## What is element's label
-Label is text (or image of text) displayed on or next the element, which describes its purpose.
+Label is text (or an image of text) displayed on or next to the element, which describes its purpose.
 
 ### Other names of label
 In accessibility context, label can be referenced as:
@@ -9,7 +9,7 @@ In accessibility context, label can be referenced as:
 - Visible label
 
 ## What is name (accessibility name)
-Elements name is text which is presented to assistive technologies, like screen readers.
+An element's name is text that is presented to assistive technologies, like screen readers.
 
 ### Other names of name
 In accessibility context, name can be referenced as:
@@ -19,10 +19,10 @@ In accessibility context, name can be referenced as:
 - Accessibility label
 
 ## Referencing issue
-As the same term can be sometimes called in a different way, it might be easy to confuse both of them. 
+As the same term can sometimes be called in a different way, it might be easy to confuse both of them. 
 
 ## Are label and name different?
-While label and name are different terms, they often are created from the same element.
+While label and name are different terms, they are often created from the same element.
 Visible text always acts as a label. At the same time visible text can, but doesn't have to act as a name.
 
 If the name can be [created from content](https://www.w3.org/TR/wai-aria/#namefromcontent), and content is present, name is created automatically and in most cases there is no need to provide a name explicitly.
@@ -36,7 +36,7 @@ A button can have a name created from content.
 <button>Save</button>
 ```
 
-Still it's possible to change such a name. This can be done using the `aria-label` attribute.
+It's still possible to change such a name. This can be done using the `aria-label` attribute.
 ```
 <!-- Now the button's name is "Save file", content is overwritten by aria-label  -->
 <button aria-label="Save file">Save</button>
@@ -55,7 +55,7 @@ For elements for which labelling `<label>` tag is supported, and there are no at
 <input type="text" id="year"> 
 ```
 
-Still it's possible to override visible text
+It's still possible to override the visible text
 ```
 <!-- Now the input's name is: "Current year"
 aria-label and aria-labelledby have precedence over <label>
@@ -65,7 +65,7 @@ aria-label and aria-labelledby have precedence over <label>
 ```
 
 ### Dialog
-Let's consider similar example as before, but with a dialog.
+Let's consider a similar example as before, but with a dialog.
 ```
 <!-- There is some content, but dialog has no name, as dialog role doesn't support name from content -->
 <dialog>

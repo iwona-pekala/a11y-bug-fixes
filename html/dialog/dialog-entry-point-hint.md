@@ -1,9 +1,9 @@
 # A control that opens a dialog
 
-A control which is used to open a dialog should be a [button](../button/button-checklist.md).
+A control that is used to open a dialog should be a [button](../button/button-checklist.md).
 
 ## Indicate that a button opens a dialog
-Indicating that a button opens a dialog is optional but it can be done by using `aria-haspopup="dialog"` attribute.
+Indicating that a button opens a dialog is optional, but it can be done by using the `aria-haspopup="dialog"` attribute.
 
 **Examples:**
 
@@ -12,7 +12,7 @@ Indicating that a button opens a dialog is optional but it can be done by using 
 ```<span role="button" tabindex="0" aria-haspopup="dialog">Upload files</button>```
 
 ### Anti-pattern
-Never use value other than `dialog` for `aria-haspopup` for a button which opens a dialog.
+Never use a value other than `dialog` for `aria-haspopup` for a button that opens a dialog.
 The apparently generic value `true` indicates a menu.
 
 ***BAD examples:***

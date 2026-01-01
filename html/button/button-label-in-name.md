@@ -7,30 +7,30 @@
 Details about [label and name](label-name.md) are described in the accessibility tree chapter.
 
 ## Why?
-While most accessibility tree properties are mostly intended for screen readers, but **label in name** check is intended for speech input users (users who control their devices using voice).
+While most accessibility tree properties are intended for screen readers, the **label in name** check is intended for speech input users (users who control their devices using voice).
 
 This check comes directly from [WCAG 2.5.3 success criterion](https://www.w3.org/WAI/WCAG22/Understanding/label-in-name.html).
 It's defined to ensure that speech input assistive technologies can activate controls using their visible text.
 
 ## How it works?
-When a speech input hears activation command followed by a keyword, it tries to find a control which name contains a spoken keyword. Users are likely to say labels seen on or near the control, and they can't guess the name if it doesn't contain visible text.
+When a speech input hears an activation command followed by a keyword, it tries to find a control whose name contains the spoken keyword. Users are likely to say labels seen on or near the control, and they can't guess the name if it doesn't contain visible text.
 
-## What "contains" mean
+## What "contains" means
 
 Simplified formula:
 1. Identify element's label (visible text that might be considered a label by users).
 2. Remove punctuation and capitalization.
-3. Identify element's name.
+3. Identify the element's name.
 4. Remove punctuation and capitalization.
-5. Check if string found at step 2 is included in step found at step 4.
+5. Check if the string found at step 2 is included in the string found at step 4.
    - Copy the string found at step 2 into a Notepad.
    - Copy the string found at step 4.
-   - Press ctrl+f, search for the last copied string.
+   - Press Ctrl+F, search for the last copied string.
    - Check if the string is found.
-7. If YES, then "label in name" is met.
+7. If yes, then "label in name" is met.
 
 ## When in doubt
-- Make the name matching label exactly
+- Make the name match the label exactly
 - If you need to update a name to make sure it describes control's purpose:
   - Copy label and append additional information after it.
 - Test with speech input assistive technologies.

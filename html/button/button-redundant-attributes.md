@@ -1,9 +1,9 @@
-# Attributes which are redundant for a button
+# Attributes that are redundant for a button
 Some attributes added to the button won't impact accessibility, but they will blow up the code while not adding any value at all. **Most** of the items below **are applicable to the `<button>` tag**. Each section states the applicability explicitly.
 
 ## Role
 
-If you use the `<button>` tag or `<input type="button">`, do not add explicit role. The role is implicit in this case. In other words, the `<button>` has a role button by default.
+If you use the `<button>` tag or `<input type="button">`, do not add an explicit role. The role is implicit in this case. In other words, the `<button>` has a role of button by default.
 
 **✖ BAD practice:**
 ```
@@ -35,7 +35,7 @@ Do not use `aria-label`/`aria-labelledby`/`title` if the button's name should ma
 ```
 
 ## Tabindex
-Do not `tabindex=0` to the native `<button>`. The `<button>` is keyboard focusable by default.
+Do not add `tabindex="0"` to the native `<button>`. The `<button>` is keyboard focusable by default.
 
 **✖ BAD practice:**
 ```
@@ -48,4 +48,4 @@ Do not `tabindex=0` to the native `<button>`. The `<button>` is keyboard focusab
 ```
 
 ## Key events
-Do not add onkeydown / onkeyup to the native `<button>`. They are handled automatically for Enter/Space - onclick is executed.
+Do not add onkeydown/onkeyup to the native `<button>`. They are handled automatically for Enter/Space - onclick executes.

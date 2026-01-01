@@ -1,6 +1,6 @@
 # How to break a native `<button>`'s accessibility?
 
-While the `<button>` is mostly accessible by default. It still can be broken with 'techniques' below.
+While the `<button>` is mostly accessible by default, it can still be broken with the 'techniques' below.
 
 ## Role
 
@@ -19,7 +19,7 @@ While the `<button>` has an implicit button role, it's still possible to remove 
 ```
 
 ## Focusability
-Any `<button>` can be reached with a Tab key. Still it can be broken by using `tabindex="-1"` attribute. Assuming that a button should be enabled and accessible in a standard way by everyone:
+Any `<button>` can be reached with the Tab key. It can still be broken by using the `tabindex="-1"` attribute. Assuming that a button should be enabled and accessible in a standard way by everyone:
 
 **✖ Do NOT do this**
 ```
@@ -32,10 +32,10 @@ Browsers provide the default focus indicator for each focusable element, includi
 - Add own focus indicator if the default one is removed.
 
 ## Enter and Space
-Any `<button>` with onclick event, can be activated with Enter and Space as well. Custom keyboard events for Enter/Space shouldn't be added. The outcome might be following:
+Any `<button>` with an onclick event can be activated with Enter and Space as well. Custom keyboard events for Enter/Space shouldn't be added. The outcome might be the following:
 - The button's action might be performed twice.
 - The button might be impossible to activate with screen readers on.
-- The button's action might be performed for any key. Example: The Tab key may activate the button
+- The button's action might be performed for any key. Example: The Tab key may activate the button.
 
 **✖ Do NOT do this**
 ```
@@ -48,8 +48,8 @@ Any `<button>` with onclick event, can be activated with Enter and Space as well
 ```
 
 ## `click` event set for the correct element
-As mentioned before providing onclick() is sufficient to ensure keyboard accessibility as well. However, `click` event must be set on the button, not on an inner or outer element.
-Such a button will work with mouse without any issues, but cannot be activated with keyboard.
+As mentioned before, providing onclick() is sufficient to ensure keyboard accessibility as well. However, the `click` event must be set on the button, not on an inner or outer element.
+Such a button will work with a mouse without any issues, but cannot be activated with a keyboard.
 
 **✖ Do NOT do this**
 ```

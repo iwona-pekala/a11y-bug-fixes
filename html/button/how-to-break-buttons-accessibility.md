@@ -21,7 +21,7 @@ Last resort with several extra conditions:
 ```
 
 ### A `<button>` tag with role attribute
-Almost any role added to the `<button>` tag will strip the button's role. The only exception is `role="button"`, but there is no point of indicating that button is a button.
+Almost any role added to the `<button>` tag will strip the button's role. The only exception is `role="button"`, but there is no point in indicating that a button is a button.
 
 **✖ Broken example:**
 ```
@@ -29,7 +29,7 @@ Almost any role added to the `<button>` tag will strip the button's role. The on
 
 
 <!--
-The tags below are equivalents of writing the same code twice, like this:
+The tags below are equivalent to writing the same code twice, like this:
 i = 0;
 i = 0;
 -->
@@ -67,11 +67,11 @@ TODO
 ### Space doesn't activate the button
 ### Enter doesn't activate the button
 ### Keyup or Keydown
-### Tab key (or any other key) activate the button
+### Tab key (or any other key) activates the button
 ### onclick set for an incorrect tag
 ### Works with keyboard only, but doesn't work with a screen reader
 ### tabindex / key events mismatch
-### Page scrolls when space is pressed
+### Page scrolls when Space is pressed
 
 ## No focus indicator
 

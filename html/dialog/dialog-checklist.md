@@ -3,7 +3,7 @@
 ## Checklist
 
 - The control that opens a dialog is a [button](../button/button-checklist.md)
-- [Optional] [The control that opens a dialog indicates that it opens a dialog](dialog-entry-point.md)
+- [Optional] [The control that opens a dialog indicates that it opens a dialog](dialog-entry-point-hint.md)
 - When the dialog entry point is activated, keyboard focus moves into the dialog
   - [The first interactive element in the dialog receives focus](dialog-first-interactive-control-autofocus.md)
   - The focus indicator is visible

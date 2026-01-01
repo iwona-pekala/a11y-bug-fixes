@@ -24,14 +24,14 @@ Do not use `aria-label`/`aria-labelledby`/`title` if the button's name should ma
 ```
 <button aria-label="Save">Save</button>
 <button aria-label="Save"><img src="…" alt="Save"></button>
-<span tabindex="0" role="button" aria-label="Save">Save</button>
+<span tabindex="0" role="button" aria-label="Save">Save</span>
 ```
 
 **✔ Good practices:**
 ```
 <button>Save</button>
 <button><img src="…" alt="Save"></button>
-<span tabindex="0" role="button">Save</button>
+<span tabindex="0" role="button">Save</span>
 ```
 
 ## Tabindex

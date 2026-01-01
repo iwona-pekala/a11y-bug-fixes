@@ -40,7 +40,7 @@ A walkaround involves seprating 'background' and the dialog's content and [hidin
 </body>
 ```
 ## Case `<dialog>` element
-The modal <dialog> is displayed by using `showModal()` method. There are no extra steps required, screen reader focus is trapped inside such a dialog.
+The modal `<dialog>` is displayed by using `showModal()` method. There are no extra steps required, screen reader focus is trapped inside such a dialog.
 
 **Example:**
 

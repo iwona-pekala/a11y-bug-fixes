@@ -29,7 +29,7 @@ Almost any role added to the `<button>` tag will strip the button's role. The on
 
 
 <!--
-The tags below are eqivalents of writing the sam code twice, like this:
+The tags below are equivalents of writing the same code twice, like this:
 i = 0;
 i = 0;
 -->

@@ -1,8 +1,8 @@
 # Trapping screen reader focus inside a modal dialog
 
-Screen reader is trapped inside the dialog, when all dialog's elements are accessibile for a screen reader, while any background page elements cannot be reached with a screen reader.
+Screen reader is trapped inside the dialog, when all dialog's elements are accessible for a screen reader, while any background page elements cannot be reached with a screen reader.
 
-What is you current dialog implementation?
+What is your current dialog implementation?
 1. [`role="dialog"`](#case-roledialog)
 2. [`<dialog>`](#case-dialog-element)
 
@@ -17,8 +17,8 @@ If a dialog is implemented by using role=`dialog` attribute, screen reader focus
 The one attribute above is sufficient for all screen readers except for TalkBack. TalkBack ignores aria-modal attribute. 
 
 ### TalkBack resolution
-There are two possible approaches: ignore TalkBack and wait for a full support, or provide a walkaround.
-A walkaround involves seprating 'background' and the dialog's content and [hiding](../hiding/what-should-be-hidden.md) not relevant layer from screen readers.
+There are two possible approaches: ignore TalkBack and wait for a full support, or provide a workaround.
+A workaround involves separating 'background' and the dialog's content and [hiding](../hiding/what-should-be-hidden.md) not relevant layer from screen readers.
 
 **Example:**
 

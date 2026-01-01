@@ -9,7 +9,7 @@ A name for a button can be provided using:
 4. content
 5. `title` attribute
 
-The order listed above is not random. Name is computed in the order mentioned. When a condition is met (like: given attribute,content or tag is present). Name computation stops and remaining name candidates are ignored.
+The order listed above is not random. Name is computed in the order mentioned. When a condition is met (like: given attribute, content or tag is present). Name computation stops and remaining name candidates are ignored.
 
 ## Content
 While the content is low on the list, it's the element which is used very often. This is a very good name candidate and there is no need to provide extra attributes.
@@ -36,7 +36,7 @@ The aria-label attribute should contain the text that should act as a label. Whe
 <button aria-label="Save"></button>
 <span role="button" tabindex="0" aria-label="Save"></span>
 
-<!-- Buttons with with contents not having text alternative -->
+<!-- Buttons with contents not having text alternative -->
 <button aria-label="Save"><img src="" alt=""></button>
 <span role="button" tabindex="0" aria-label="Save"><img src="" alt=""></span>
 ```

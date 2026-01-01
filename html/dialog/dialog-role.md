@@ -16,7 +16,7 @@
 `<dialog aria-label="Upload attachment">…</dialog>`
 
 ### Best practices
-Do **NOT** not apply the role twice:
+Do **NOT** apply the role twice:
 
 `<dialog role="dialog">…</dialog>`
 

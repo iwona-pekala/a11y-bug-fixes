@@ -1,4 +1,4 @@
-# Focus should return to the trigerring button when a dialog is closed
+# Focus should return to the triggering button when a dialog is closed
 
 When we consider that a control should be focused it means:
 - It should be focused for keyboard.
@@ -6,7 +6,7 @@ When we consider that a control should be focused it means:
 
 It's not possible to manually manage screen reader focus only, but once the keyboard focus is set, screen reader focus will follow as well.
 
-What is you current dialog implementation?
+What is your current dialog implementation?
 1. [`role="dialog"`](#case-roledialog)
 2. [`<dialog>`](#case-dialog-element)
 

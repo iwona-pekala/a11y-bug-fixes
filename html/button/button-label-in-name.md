@@ -2,9 +2,9 @@
 
 ## Label and name definitions
 - Label - text displayed on the button (image of text counts as well).
-- [Name](../accessibility%20tree/name.md) - text presented to assistive technologies.
+- [Name](<../accessibility tree/name.md>) - text presented to assistive technologies.
 
-Details about [label and name](label-name.md) are described in the accessibility tree chapter.
+Details about [label and name](<../accessibility tree/label-name.md>) are described in the accessibility tree chapter.
 
 ## Why?
 While most accessibility tree properties are intended for screen readers, the **label in name** check is intended for speech input users (users who control their devices using voice).

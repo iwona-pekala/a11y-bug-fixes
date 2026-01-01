@@ -9,7 +9,7 @@ Indicating that a button opens a dialog is optional, but it can be done by using
 
 ```<button aria-haspopup="dialog">Upload files</button>```
 
-```<span role="button" tabindex="0" aria-haspopup="dialog">Upload files</button>```
+```<span role="button" tabindex="0" aria-haspopup="dialog">Upload files</span>```
 
 ### Anti-pattern
 Never use a value other than `dialog` for `aria-haspopup` for a button that opens a dialog.
@@ -19,7 +19,7 @@ The apparently generic value `true` indicates a menu.
 
 ```<button aria-haspopup="true">Upload files</button>```
 
-```<span role="button" tabindex="0" aria-haspopup="true">Upload files</button>```
+```<span role="button" tabindex="0" aria-haspopup="true">Upload files</span>```
 
 ## Screen readers
 Screen reader announcements will include phrases like: "has popup", "has popup dialog", "opens dialog".

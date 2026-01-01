@@ -1,4 +1,4 @@
-# How to break a native `<button>`'s accessbility?
+# How to break a native `<button>`'s accessibility?
 
 While the `<button>` is mostly accessible by default. It still can be broken with 'techniques' below.
 
@@ -48,7 +48,7 @@ Any `<button>` with onclick event, can be activated with Enter and Space as well
 ```
 
 ## `click` event set for the correct element
-As mentioned before providing onclick() is sufficient to ensure keyboard accessibility as well. However, `click` event must be set on the button, not no inner or outer element.
+As mentioned before providing onclick() is sufficient to ensure keyboard accessibility as well. However, `click` event must be set on the button, not on an inner or outer element.
 Such a button will work with mouse without any issues, but cannot be activated with keyboard.
 
 **✖ Do NOT do this**

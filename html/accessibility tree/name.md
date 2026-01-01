@@ -4,7 +4,7 @@ The accessibility name is the name of a user interface element. Name is used by 
 
 ## Name computation rules
 
-Name computation rules are very complext and they are described in [Accessible Name and Description Computation 1.1](https://www.w3.org/TR/accname-1.1/#mapping_additional_nd_name).
+Name computation rules are very complex and they are described in [Accessible Name and Description Computation 1.1](https://www.w3.org/TR/accname-1.1/#mapping_additional_nd_name).
 
 ### Sample calculation order for an element having textbox role (like `<input type="text">`)
 
@@ -17,7 +17,7 @@ Name computation rules are very complext and they are described in [Accessible N
 7. Name is the empty string.
 
 ### Sample calculation order for an element having button role (like `<button>`)
-1. Use the `aria-labelleby` attribute if present and valid, else
+1. Use the `aria-labelledby` attribute if present and valid, else
 2. Use the `aria-label` attribute if present and valid, else
 3. Use the `<label>` tag if present and valid, else
 4. Use the element's contents if present and valid, else

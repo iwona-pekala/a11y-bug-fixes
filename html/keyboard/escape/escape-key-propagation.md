@@ -1,4 +1,4 @@
-# Escape key and accessibility
+# Escape key propagation
 
 Escape key is often used to dismiss/collapse/hide something. While implementing such a functionality may seem to be straight forward, embedding a control which can be closed with the Escape key inside another such element may create accessiblity issues for keyboard only users.
 

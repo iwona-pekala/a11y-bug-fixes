@@ -9,6 +9,7 @@
 - [Button has a name](button-name.md)
 - [Button's label and name describe its purpose](button-label-name-purpose.md)
 - [Button's label is included in its name](button-label-in-name.md)
+- [Context-dependent] Button is described
 - [Button's name doesn't include role](buttons-name-does-not-include-role.md)
 - Button's name doesn't include operating instructions
 - Buttons that look the same and perform the same action should have consistent names

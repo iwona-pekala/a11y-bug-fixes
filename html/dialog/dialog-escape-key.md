@@ -9,11 +9,26 @@ The problem with the Escape key is: dialog's inner elements may handle the Escap
 Unfortunately it's required handle the problem for each inner element and there seems to be no option to handle it on dialog's level.
 
 ### Custom widgets
-All widgets that may be displayed inside the dialog (or other widget which interacts with the Escape key) should take it into account in the Escape key handling function.
+All widgets that may be displayed inside the dialog and have Escape key event handlers should take it into account in the Escape key propagation.
 
-### `autocomplete`
-When dialog's element is an input with the `autocomplete` attribute, the autocomplete options are handled by the browser. Luckily browsers (Chrome at least) hide the autocomplete list without propagating the Escape key.
-TODO
+### Native widgets
+There are a few native HTML widgets which can display an extra element which can be closed The Escape key.
+
+Elements which if placed inside the dialog can be closed with the Escape key in Chrome:
+1. `<input type="text autocomplete="…">` - a text input with the `autocomplete` attribute - autocomplete list can be dismissed with the Escape key
+2. `<input list="…>` - a text input with an autocomplete - autocomplete list can be dismissed with the Escape key
+3. `<select>` - a list of option can be dismissed with the Escape key
+4. `<input type="date">` - date picker can be dismissed with the Escape key
+5. `<input type="date"  list="…">` - autocomplete list can be dismissed with the Escape key
+6. `<input type="time">` - time picker can be dismissed with the Escape key
+7. `<input type="time" list="…">` - autocomplete list can be dismissed with the Escape key
+8. `<input type="color">` - color picker can be dismissed with the Escape key
+9. `<input type="color" list="…">` - autocomplete can be dismissed with the Escape key
+10. `<input type="file">` - file picker can be dismissed with the Escape key
+
+After several optimistic case these is one which doesn't work as well.
+#### `title`
+The title attribute displays a hint over a hovered element. In this case Chrome dismisses the title and closes dialog at the same time. While not perfect, this scenario is less affecting keyboard only users, as titles are displyed on hover only, and they are not displayed on focus.
 
 ## Escape or no Escape
 When deciding if the dialog template used across a (big) project should be possible to close with the Escape key, it might be required to consider if it's possible to predict what kind of elements might be displayed inside the dialog.
@@ -26,9 +41,11 @@ When deciding if the dialog template used across a (big) project should be possi
    - Yes - Allow dialog closing with the Escape key.
    - No - Continue.
 3. Will you be able to fix the Escape handling for all dialog's inner elements?
-   - Yes - Fix the Escape key handling AND Allow dialog closing with the Escape key.
+   - Yes - Fix the Escape key handling **AND** Allow dialog closing with the Escape key.
    - No - Disable dialog closing with the Escape key.
 ## Case `role="dialog"`
+### Add Escape handling
+The most popular [accessible dialog example](https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/examples/dialog/) closes the dialog on `keyup` event, while native `<dialog>` is closed on `keydown` event. Picking the `keydown` allows to make the experience consistent, but it's minor details and most users won't notice the difference.
 ```
 function closeDialog() {  
   dialog.className = "hidden";
@@ -40,9 +57,19 @@ dialog.addEventListener("keydown", (event) => {
   }
 ```
 
+```
+.hidden {
+  display: none;
+}
+```
+### Remove Escape handling
+The Escape key won't work by default. No steps are required.
+
 ## Case `<dialog>`
+### Add Escape handling
 No extra steps are needed. Native modal dialog can be closed with the Escape key by default (`keydown` event).
-This behavior might be prevented with:
+### Remove Escape handling
+Escape handler for the dialog can be removed with:
 ```
 dialog.addEventListener("cancel", (event) => {
   event.preventDefault();

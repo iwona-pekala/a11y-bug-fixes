@@ -7,7 +7,7 @@ Description cannot replace the name, it's always suplemental.
 Description computation rules are described in:
 - [Accessible Name and Description Computation 1.1 (W3C recommendation)](https://www.w3.org/TR/accname-1.1/#mapping_additional_nd_description)
 
-Work on the new version is in progress
+Work on the new version is in progress:
 - [Accessible Name and Description Computation 1.2 (W3C working draft)](https://www.w3.org/TR/accname-1.2/#mapping_additional_nd_description)
 
 ## Calculation order

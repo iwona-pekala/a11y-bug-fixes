@@ -19,7 +19,7 @@ While description calculation is less complicated than name calculation, it stil
 2. `aria-description`
 3. HTML features
    - `<caption>` for `<table>`, but only if caption wasn't used as a name
-   - `<summary' for `<details>`, but only if it wans't used as a name
+   - `<summary>` for `<details>`, but only if it wans't used as a name
    - `value` for <`input>` with `type`s: `button`, `submit`, `reset`, but only if it wasn't used as a name
 4. `title` attribute for any tag, but only if it wasn't used as a name
 

@@ -16,7 +16,7 @@ Unfortunately it's required handle the problem for each inner element and there 
 All widgets that may be displayed inside the dialog and have Escape key event handlers should take it into account in the Escape key propagation.
 
 ### Native widgets
-There are a few [native HTML widgets](../keyboard/escape/escape-html-controls.md) which can display an extra element which can be closed The Escape key. They mostly do not cause any issues related to the Escape key event propagation.
+There are a few [native HTML widgets](../keyboard/escape/escape-html-controls.md) which can display an extra element which can be closed The Escape key. They mostly do not cause any issues related to the [Escape key event propagation](../keyboard/escape/escape-accessibility.md).
 
 ## Escape or no Escape
 When deciding if the dialog template used across a (big) project should be possible to close with the Escape key, it might be required to consider if it's possible to predict what kind of elements might be displayed inside the dialog.

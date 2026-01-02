@@ -27,7 +27,7 @@ closeButton.focus();
 …
 ```
 
-## Case `<dialog>` element
+## Case `<dialog>`
 
 Set the [`autofocus`](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/autofocus) attribute on the first interactive element in the dialog.
 

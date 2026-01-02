@@ -1,6 +1,6 @@
 # Description (accessibility)
 
-Accessibility description (accessible description) is additional information about the component, which might be provided alongisde the name.
+Accessibility description (accessible description) is additional information about the component, which might be provided alongisde the [name](name.md).
 Description cannot replace the name, it's always suplemental.
 
 ## Description computation rules

@@ -1,8 +1,8 @@
 # Closing dialog with the Escape key
 
 Users may expect that the dialog can be closed with the Escape key. This feature might be handy for all users, not all for users relying on assistive technologies. 
-Unfortunately there might some issues with this behavior and it all depends the dialog's content. 
-Assuming that a fully accessible dialog is created for an entire project, stiil there might be cases when the dialog's content will not work well with dialog's keyboard handling.
+However, there might some issues with this behavior and it all depends on the dialog's content. 
+Assuming that a fully accessible dialog is created for an entire project, still there might be cases when the dialog's content will not work well with dialog's keyboard handling.
 
 Jump directly to the implementation hints below if you are already familiar with the underlying constraints.
 1. [`role="dialog"`](#case-roledialog)

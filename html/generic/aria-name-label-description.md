@@ -135,3 +135,22 @@ Concerns resolved in the `aria-label` section apply for the `aria-description`. 
 
 ## Combine the four in one tag
 The rules described in sections above indirectly provide information about what will happen with different combination, but it's easier to show it as examples.
+
+<table>
+  <tr>
+  <th scope="col">Snippet</th><th scope="col">aria-labelledby</th><th scope="col">aria-label</th><th scope="col">aria-describedby</th><th scope="col">aria-description</th><th scope="col">Name</th><th scope="col">Description</th><th scope="col">Comment</th>
+  </tr>
+  <tr>
+    <td>&lt;button id="b"<br>
+      aria-label="Save image"<br>
+      aria-labelledby="n"<br>
+      aria-description="Files cannot be downloaded"<br>
+      aria-describedby="d"&gt;<br>
+      Save<br>
+      &lt;/button&gt;<br><br>
+      &lt;span id="n"&gt;Save file&lt;/span&gt;<br><br>
+      &lt;span id="d"&gt;Files are saved in the cloud&lt;/span&gt;
+    </td>
+    <td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Save file</td><td>Files are saved in cloud</td><td>aria-label is ignored as aria-labelledby has precedence. aria-description is ignored as aria-describedby has precedence.</td>
+  </tr>
+</table>

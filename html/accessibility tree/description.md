@@ -24,4 +24,4 @@ While description calculation is less complicated than name calculation, it stil
 4. `title` attribute for any tag, but only if it wasn't used as a name
 
 #### `aria-description` note
-The `aria-description` attribute is still a part of draft documents, but regardless it has [very good browser support](https://caniuse.com/?search=aria-description).
+The `aria-description` attribute is still a part of draft documents, but regardless it has a [very good browser support](https://caniuse.com/?search=aria-description).

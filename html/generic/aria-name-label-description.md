@@ -153,4 +153,49 @@ The rules described in sections above indirectly provide information about what 
     </td>
     <td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Save file</td><td>Files are saved in cloud</td><td><ul><li>aria-label is ignored as aria-labelledby has precedence</li><li>aria-description is ignored as aria-describedby has precedence.</li></ul></td>
   </tr>
+  <tr>
+    <td>&lt;button id="b"<br>
+      aria-label="Save image"<br>
+      aria-labelledby="nn"<br>
+      aria-description="Files cannot be downloaded"<br>
+      aria-describedby="d"&gt;<br>
+      Save<br>
+      &lt;/button&gt;<br><br>
+      &lt;span id="n"&gt;Save file&lt;/span&gt;<br><br>
+      &lt;span id="d"&gt;Files are saved in the cloud&lt;/span&gt;
+    </td>
+    <td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Save image</td><td>Files are saved in cloud</td><td><ul><li>aria-label is used as aria-labelledby references not existing id</li><li>aria-description is ignored as aria-describedby has precedence.</li></ul></td>
+  </tr>
+  <tr>
+    <td>&lt;button id="b"<br>
+      aria-label="Save image"<br>
+      aria-labelledby="n"<br>
+      aria-description="Files cannot be downloaded"<br>
+      aria-describedby=""&gt;<br>
+      Save<br>
+      &lt;/button&gt;<br><br>
+      &lt;span id="n"&gt;Save file&lt;/span&gt;<br><br>
+      &lt;span id="d"&gt;Files are saved in the cloud&lt;/span&gt;
+    </td>
+    <td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Save file</td><td>Files cannot be downloaded</td><td><ul><li>aria-label is ignored as aria-labelledby has precedence</li><li>aria-description is used as aria-describedby doesn't reference any id</li></ul></td>
+  </tr>
+  <tr>
+    <td>&lt;button id="b"<br>
+      aria-description="Files cannot be downloaded"<br>
+      Save<br>
+      &lt;/button&gt;<br><br>
+      &lt;span id="n"&gt;Save file&lt;/span&gt;<br><br>
+      &lt;span id="d"&gt;Files are saved in the cloud&lt;/span&gt;
+    </td>
+    <td>No</td><td>No</td><td>No</td><td>Yes</td><td>Save</td><td>Files cannot be downloaded</td><td><ul><li>Name is created from content</li><li>aria-description is used as aria-describedby is not present</li></ul></td>
+  </tr>
+  <tr>
+    <td>&lt;button id="b"<br>
+      aria-description="Files cannot be downloaded"<br>      
+      &lt;/button&gt;<br><br>
+      &lt;span id="n"&gt;Save file&lt;/span&gt;<br><br>
+      &lt;span id="d"&gt;Files are saved in the cloud&lt;/span&gt;
+    </td>
+    <td>No</td><td>No</td><td>No</td><td>Yes</td><td>&lt;Empty&gt;</td><td>Files cannot be downloaded</td><td><ul><li>The button has no name, as there are no name candidates</li><li>aria-description is used as aria-describedby is not present</li><li>Screen reader output will be like: "Unlabled button. Files cannot be downloaded"</li></ul></td>
+  </tr>
 </table>

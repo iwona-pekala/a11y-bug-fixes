@@ -12,7 +12,7 @@ While both attributes are intended to provide a name, they work in a different w
 
 ### `aria-labelledby`
 The `aria-labelledby` value must be an id, or a list of ids referencing existing HTML tags. It's similar to the `<label>` tag, as it's also used to name an element by using another element.
-Ids must be unique, as otherwise
+Ids must be unique, as otherwise only the first element with given id is referenced.
 
 #### Example with one id
 ```
@@ -92,3 +92,46 @@ If there is an external element which acts as a visible label, use `aria-labelle
 
 #### 2. Can I use `aria-labelledby` and `aria-label` for the same tag?
 Technically yes, but it probably won't result in the outcome that was expected. If both valid `aria-labelledby` and `aria-label` are present, only `aria-labelledby` is used in [name computation](name.md#name-computation-rules), and `aria-label` is ignored.
+
+## Description: `aria-describedby`, `aria-description`
+`aria-describedby`and `aria-description` are equivalents of `aria-labelledby` and `aria-label`, but for a description.
+
+### `aria-describedby`
+As `aria-labelledby`, the `aria-describedby` attribute references id or ids of other elements. Descriptions do not ovewrite the name, they are added to the name.
+```
+<button aria-describedby="info">Save</button>
+<span id="info">Files are saved in the cloud.</span>
+```
+In the example above, the button's name will be "Save", and description will be: "Files are saved in the cloud." A screen reader announcements will be like: "Save button, Files are saved in the cloud."
+
+```
+<label for="new-password>New password</label>
+<input type="password" id="new-password" aria-describedby="info1 info2 info3">
+<span id="info1">Password needs to have at least 16 characters.</span>
+<span id="info2">Previous passwords cannot be reused.</span>
+<span id="info3">Use at least one upper case letter.</span>
+```
+In the example above the `<input>` has a "New password" name, and the description is: "Password needs to have at least 16 characters. Previous passwords cannot be reused. Use at least one upper case letter."
+
+#### Concerns
+Concerns resolved in the `aria-labelledby` section apply for the `aria-describedby`. Just replace `aria-labelledby` with `aria-describedby` and "Name" with "Description".
+
+### `aria-description`
+The `aria-description` is part of the draft documents. It's mentioned in the [Accessible Name and Description Computation 1.1 (W3C recommendation)](https://www.w3.org/TR/accname-1.1/#mapping_additional_nd_description) and [Accessible Rich Internet Applications (WAI-ARIA) 1.3](https://www.w3.org/TR/wai-aria-1.3/) - both of them are still not finalized recommendations, and `aria-description` is not referenced in the current recommendations.
+
+#### Reality
+On the other hand the current browser implementation is far from being a draft. Chrome (desktop and mobile), Safari (desktop and mobile), Firefox - all of them support `aria-description`. When it comes to screen reader support, nothing new is needed from their side. The `aria-description` populates the description field, the same field as `aria-describedby`. As a result the support of `aria-description` is the same as for `aria-describedby`.
+
+#### Should it be used?
+The only risk of using `aria-description` at the moment is that it will be removed from the draft documents. The risk of such a case seems to be very low.
+
+#### Example
+```
+<button aria-description="Closes upload dialog">Close</button>
+```
+In the example above the `<button>` has "Close" name, and the description is: "Closes upload dialog". A screen reader announcements will be like: "Close button. Closes upload dialog".
+#### Concerns
+Concerns resolved in the `aria-label` section apply for the `aria-description`. Just replace `aria-labelledby` with `aria-describedby`, `aria-label` with `aria-description` and "Name" with "Description".
+
+## Combine the four in one tag
+The rules described in sections above indirectly provide information about what will happen with different combination, but it's easier to show it as examples.

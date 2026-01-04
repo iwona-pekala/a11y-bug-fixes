@@ -151,6 +151,6 @@ The rules described in sections above indirectly provide information about what 
       &lt;span id="n"&gt;Save file&lt;/span&gt;<br><br>
       &lt;span id="d"&gt;Files are saved in the cloud&lt;/span&gt;
     </td>
-    <td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Save file</td><td>Files are saved in cloud</td><td>aria-label is ignored as aria-labelledby has precedence. aria-description is ignored as aria-describedby has precedence.</td>
+    <td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Save file</td><td>Files are saved in cloud</td><td><ul><li>aria-label is ignored as aria-labelledby has precedence</li><li>aria-description is ignored as aria-describedby has precedence.</li></ul></td>
   </tr>
 </table>

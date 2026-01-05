@@ -54,6 +54,8 @@ The `aria-labelledby' attribute will be ignored and there will be an attempt to 
 …
 </dialog>
 ```
+##### 5. Can I use `aria-label` / `aria-labelledby` for all tags?
+No. The following tags cannot be named at all, so 
 
 ##### 5. What happens when there are duplicate ids?
 Only the first DOM element with the given id will be used for name computation.
